@@ -2,11 +2,11 @@ import Race from './Race';
 
 class Elf extends Race {
   private _maxLifePoints = 99;
-  private static _createInstance = 0;
+  private static _elfInstance = 0;
 
   constructor(nam: string, dex: number) {
     super(nam, dex);
-    Elf._createInstance += 1;
+    Elf._elfInstance += 1;
   }
   
   public get maxLifePoints() : number {
@@ -14,7 +14,7 @@ class Elf extends Race {
   }
 
   static createdRacesInstances(): number {
-    return this._createInstance;
+    return this._elfInstance;
   }
 }
 

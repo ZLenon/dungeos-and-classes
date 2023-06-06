@@ -5,9 +5,9 @@ abstract class Archetype {
   private _name: string;
   private _special: number;
 
-  constructor(nam: string, spc = 0, cst = 0) {
-    this._cost = cst;
-    this._special = spc;
+  constructor(nam: string) {
+    this._cost = 0;
+    this._special = 0;
     this._name = nam;
   }
   

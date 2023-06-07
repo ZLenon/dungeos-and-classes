@@ -10,6 +10,7 @@ interface Fighter {
   special?(enemy: Fighter): void;
   levelUp(): void;
   receiveDamage(atkPts: number): number;
+  
 }
 
 export default Fighter;
